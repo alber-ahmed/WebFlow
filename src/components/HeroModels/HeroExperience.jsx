@@ -1,6 +1,7 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
+import CanvasLoader from "../components/Loading.jsx";
 
 import { Room } from "./Room";
 import HeroLights from "./HeroLights";
@@ -25,7 +26,7 @@ const HeroExperience = () => {
         maxPolarAngle={Math.PI / 2} // Maximum angle for vertical rotation
       />
 
-      <Suspense fallback={null}>
+      <Suspense fallback={<CanvasLoader/>}>
         <HeroLights />
         <Particles count={100} />
         <group
