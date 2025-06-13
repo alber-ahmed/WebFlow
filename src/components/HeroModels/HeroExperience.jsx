@@ -1,7 +1,7 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useMediaQuery } from "react-responsive";
-import CanvasLoader from "../components/Loading.jsx";
+import CanvasLoader from "../Loading.jsx";
 
 import { Room } from "./Room";
 import HeroLights from "./HeroLights";
